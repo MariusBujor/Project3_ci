@@ -80,6 +80,18 @@ def left_side():
         else:
             return answer.lower()
 
+def level_two():
+    print("Good choice - You are so lucky! Run forward to find the next two doors.")
+    print("You are in front of the second door choice challange")
+    print("What door you choose to open ? ")
+    print("The Green or the White door")
+    while True:
+        answer = input ("Type you choice :\nW or G : \n>> ")
+        if answer.lower() != 'w' and answer.lower() != 'g':
+            print("Incorrect answer!")
+        else:
+            return answer.lower()
+
 
 def game_over():
     """ Prints message and ask for user input """
@@ -143,11 +155,19 @@ def start():
         if l == 'r':
             game_over()
             return
-        else:
-            r = right_side()
-            if r == 'l':
-                game_over()
-                return
+    else:
+        r = right_side()
+        if r == 'l':
+            game_over()
+            return
+
+    option_two = level_two()
+    
+    if (option_one == "l" and option_two == "w") or ( 
+    option_one == "r" and option_two == "g"):
+        game_over()
+        return
+        
 
 
 
