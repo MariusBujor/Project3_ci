@@ -102,8 +102,22 @@ def level_three():
             print("Incorrect answer!")
         else:
             return answer
-            
 
+def level_four():
+
+    print("Good choice - You are so lucky!")
+    print("Run forward to find the last challange.")
+    print("You are in front of the last door...that has a panel new to it")
+    print("Panel has three options from where  you need to chose only one.....")
+    print("It has one wire / one emergency glass button/ and a switch")
+    print("What is your choice cut the wire / break the glass / turn the switch ?")
+    
+    while True:
+        answer = input ("Type you choice :\nC, B or T : \n>> ")
+        if answer.lower() != 'c' and answer.lower() != 'b' and answer.lower() != 't':
+            print("Incorrect answer!")
+    else:
+        return answer.lower()
 
 
 
@@ -178,7 +192,7 @@ def start():
 
     option_two = level_two()
 
-    if (option_one == "l" and option_two == "w") or ( 
+    if (option_one == "l" and option_two == "w") or (
     option_one == "r" and option_two == "g"):
         game_over()
         return
@@ -189,17 +203,13 @@ def start():
     option_one == "r" and option_three == "1"):
        game_over()
        return
+    # option_four() = level_four()
 
-    
+    # if option_four == "c" or option_four == "b":
+    #     game_over()
+	# 	return
         
-
-
-
-    
-
-
-
-
-
-
 start()
+
+
+
