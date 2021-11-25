@@ -50,6 +50,30 @@ def level_one():
         else:
             return answer.lower()
 
+def game_over():
+    """ Prints message and ask for user input """
+    clear_console()
+    print("!!!!!!!! ALARM !!!!!!!!!!")
+    print("Seems that you took a wrong choice")
+    print("All robots are coming towards you")
+    print("No way to escape")
+    print("You meet one of the robots but you did not")
+    print("had any chance againts and you have been killed")
+    print("Game over!")
+    print("Do you want to start again?")
+    start_again = input("Y or N\n>> ").lower().strip()
+    if start_again == "y":
+        start()
+    else :
+        end()
+def end():
+    clear_console()
+    print("Sorry to see you leaving. Hope you enjoyed the game.")
+
+    quit()
+
+
+
 
 
     
@@ -94,7 +118,6 @@ def start():
                 game_over()
                 return
 
-    print()
 
 
     
