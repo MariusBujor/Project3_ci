@@ -92,6 +92,20 @@ def level_two():
         else:
             return answer.lower()
 
+def level_three():
+    print("Good choice - You are so lucky !")
+    print("Running forword you found the next two doors that are black.")
+    print("On each door is a number...1...and...2.")
+    while True:
+        answer = input ("Type you choice :\n1 or 2 : \n>> ")
+        if answer != '1' and answer != '2':
+            print("Incorrect answer!")
+        else:
+            return answer
+            
+
+
+
 
 def game_over():
     """ Prints message and ask for user input """
@@ -138,6 +152,7 @@ def start():
 
 
     play = choose_play()
+
     print("Welcome my soldier...")
     if play == "n":
         print("Freedom is on the other side of THE MAZE.Try again when you are ready !")
@@ -162,11 +177,20 @@ def start():
             return
 
     option_two = level_two()
-    
+
     if (option_one == "l" and option_two == "w") or ( 
     option_one == "r" and option_two == "g"):
         game_over()
         return
+
+    option_three = level_three()
+
+    if (option_one == "l" and option_three == "2") or ( 
+    option_one == "r" and option_three == "1"):
+       game_over()
+       return
+
+    
         
 
 
