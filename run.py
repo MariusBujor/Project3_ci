@@ -1,22 +1,18 @@
-
 import os 
 import time
 
 def clear_console():
     """ Clear the console. """
-    os.system('cls' if os.name =='nt' else 'clear')
-
+    os.system('cls' if os.name == 'nt' else 'clear')
 def choose_play():
     """ Prints message and ask for user input """
     print("Are you ready to start \n   THE MAZE GAME ? \n    (Y or N) ")
-
     while True:
         answer = input ("Type you choice : \n>> ")
         if answer.lower() != 'y' and answer.lower() != 'n':
             print("Incorrect answer.")
         else:
             return answer.lower()
-            
 def intro_game():
     """ Prints message and ask for user input """ 
     print("What is your name ?")
@@ -49,6 +45,41 @@ def level_one():
             print("Incorrect answer!")
         else:
             return answer.lower()
+
+
+def right_side():
+    """ Prints message and ask for user input """
+    print("You choose Right ")
+    print("Good Choice ...")
+    print("Are you scared ?....No worries..")
+    print("There is no danger yet but you can hear the noise made")
+    print("by the robots that are patroling in the maze , going forward you")
+    print("arrived in front of one door of Red colour and one Lift")
+    print("You will need to chose carefully because behind")
+    print("one of this options is a robot ready to kill you.")
+    while True:
+        answer = input ("Type you choice :\nR or L : \n>> ")
+        if answer.lower() != 'l' and answer.lower() != 'r':
+            print("Incorrect answer!")
+        else :
+            return answer.lower()
+def left_side():
+    """ Prints message and ask for user input """
+    print("You chose Left ")
+    print("Good Choice ...")
+    print("Are you scared?....No worries..")
+    print("There is no danger yet but you can hear the noise made")
+    print("by the robots that are patroling in the maze, going forward you")
+    print("arrived in front of two colored doors : one Red and one Blue")
+    print("You will need to chose carefully because behind")
+    print("one of this doors there is a robot ready to kill you.")
+    while True :
+        answer = input ("Type you choice :\nR or B : \n>> ")
+        if answer.lower() != 'r' and answer.lower() != 'b':
+            print("Incorrect answer!")
+        else:
+            return answer.lower()
+
 
 def game_over():
     """ Prints message and ask for user input """
