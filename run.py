@@ -33,6 +33,7 @@ def choose_play():
 
 def intro_game():
     """ Prints message and ask for user input """
+
     time.sleep(b)
     print("What is your name ?")
 
@@ -84,7 +85,7 @@ def level_one():
     print("Which way are you going...")
 
     while True:
-
+        
         answer = input("Type you choice :\nL or R : \n>> ")
         if answer.lower() != 'l' and answer.lower() != 'r':
             print("Incorrect answer!")
