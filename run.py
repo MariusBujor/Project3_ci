@@ -1,5 +1,4 @@
 import os
-
 import time
 
 # Time value
@@ -19,7 +18,7 @@ def choose_play():
     """ Prints message and ask for user input """
 
     print("Are you ready to start \n   THE MAZE GAME ? \n    (Y or N) ")
-    time.sleep(b)
+    time.sleep(a)
 
     while True:
 
@@ -74,15 +73,15 @@ def level_one():
     time.sleep(b)
     print("If you succeed  you will be free in a normal world.")
     time.sleep(b)
-    print("You are wakilng towords the entrance of the Maze.....")
+    print("You are walking towards the entrance of the Maze.....")
     time.sleep(b)
-    print("You arrived and you are realeasing that")
+    print("You arrived and you are releasing that")
     time.sleep(b)
     print("you need to choose between to dark ways..")
     time.sleep(b)
     print("One corridor on the Left and on corridor on Right")
     time.sleep(b)
-    print("Wich way are you going...")
+    print("Which way are you going...")
 
     while True:
 
@@ -98,6 +97,8 @@ def level_one():
 def right_side():
     """ Prints message and ask for user input """
 
+    clear_console()
+
     print("You choose Right ")
     time.sleep(b)
     print("Good Choice ...")
@@ -106,11 +107,13 @@ def right_side():
     time.sleep(b)
     print("There is no danger yet but you can hear the noise made")
     time.sleep(b)
-    print("by the robots that are patroling in the maze , going forward you")
+    print("by the robots that are patrolling in the maze , going forward you")
     print("arrived in front of one door of Red colour and one Lift")
     time.sleep(b)
     print("You will need to chose carefully because behind")
     print("one of this options is a robot ready to kill you.")
+    time.sleep(b)
+    print("Are you ready to choose between Red door and the Lift ?")
 
     while True:
 
@@ -124,6 +127,9 @@ def right_side():
 
 def left_side():
     """ Prints message and ask for user input """
+
+    clear_console()
+
     print("You chose Left ")
     time.sleep(b)
     print("Good Choice ...")
@@ -131,11 +137,14 @@ def left_side():
     print("Are you scared?....No worries..")
     time.sleep(b)
     print("There is no danger yet but you can hear the noise made")
-    print("by the robots that are patroling in the maze, going forward you")
+    print("by the robots that are patrolling in the maze, going forward you")
     print("arrived in front of two colored doors : one Red and one Blue")
     time.sleep(b)
     print("You will need to chose carefully because behind")
     print("one of this doors there is a robot ready to kill you.")
+    time.sleep(b)
+    print("Between Red door and Blue door?")
+    print("which door will you choose to open ?")
 
     while True:
 
@@ -150,12 +159,15 @@ def left_side():
 
 
 def level_two():
+    """ Prints message and ask for user input """
+
+    clear_console()
 
     print("Good choice - You are so lucky!")
     time.sleep(b)
     print("Run forward to find the next two doors.")
     time.sleep(b)
-    print("You are in front of the second door choice challange")
+    print("You are in front of the second door choice challenge")
     time.sleep(b)
     print("What door you choose to open ? ")
     time.sleep(b)
@@ -173,12 +185,21 @@ def level_two():
 
 
 def level_three():
+    """ Prints message and ask for user input """
+
+    clear_console()
 
     print("Good choice - You are so lucky !")
     time.sleep(b)
-    print("Running forword you found the next two doors that are black.")
+    print("Running forward you found the next two doors that are black.")
     time.sleep(b)
-    print("On each door is a number...1...and...2.")
+    print("Confusing....????????...")
+    time.sleep(b)
+    print("After some time you realised that on each door ")
+    print("is a number inscripted a small number.. No 1 on one door") 
+    print("and No 2 on the other door.")
+    time.sleep(b) 
+    print("What door number will you choose to open ..  ?")
 
     while True:
 
@@ -192,23 +213,24 @@ def level_three():
 
 
 def level_four():
+    """ Prints message and ask for user input """
+
+    clear_console()
 
     print("Good choice - You are so lucky!")
     time.sleep(b)
-    print("Run forward to find the last challange.")
-    time.sleep(b)
-    print("You are in front of the last door...that has a panel new to it")
+    print("Going forward between the walls you will find the last challenge...")
     time.sleep(b)
     print("Panel has three options from where  you need to chose only one")
     time.sleep(b)
     print("It has one wire / one emergency glass button/ and a switch")
     time.sleep(b)
-    print("What is your choice cut the wire ,")
-    print("break the glass or turn the switch ?")
+    print("What do you choose.. to cut the wire ,to")
+    print("break the glass or to turn the switch ?")
 
     while True:
 
-        answer = input("Type you choice :\nC, B or T : \n>> ")
+        answer = input("Type you choice :\nC , B or T : \n>> ")
         if answer.lower() != 'c' and answer.lower() != 'b' and answer.lower() != 't':
             print("Incorrect answer!")
         else:
@@ -229,7 +251,7 @@ def game_over():
     time.sleep(b)
     print("You meet one of the robots but you did not")
     time.sleep(b)
-    print("had any chance againts and you have been killed")
+    print("had any chance against and you have been killed")
     time.sleep(b)
     print("Game over!")
     time.sleep(b)
@@ -296,6 +318,7 @@ def start(repeat=False):
 
     username = intro_game()
     print()
+    clear_console()
     print(" ----------  "f"Welcome {username}""  ---------- ")
 
     option_one = level_one()
