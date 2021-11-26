@@ -24,6 +24,10 @@
       - [Code](#code)
   # MAZE
 
+**[LIVE DEMO - Click & Play ](https://maze-ci.herokuapp.com/)**
+
+![](screenshot/maze_ci.PNG)
+
 
   ## Introduction
   
@@ -116,9 +120,13 @@ Steps :
 
 ### Credits
 [YouTube video](https://www.youtube.com/watch?v=DEcFCn2ubSg) structure inspiration
+
 #### Media
+
 The ideea came seen this movie: [The Maze Runner](https://www.denofgeek.com/movies/the-maze-runner-review-2/)
+
 #### Code
+
 [Love Sanwiches](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/58d3e90f9a2043908c62f31e51c15deb/) by Code Institute as a general resource.
 
 [GeeksforGeeks](https://www.geeksforgeeks.org/python-programming-language/) as a general resource.
