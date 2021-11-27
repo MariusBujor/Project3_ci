@@ -15,7 +15,7 @@
   - [Testing](#testing)
     - [Functionality Testing](#functionality-testing)
     - [User needs testing](#testing-user-needs)
-  - [Bugs found on PEP8](#bugs-found-PEP8)
+  - [Bugs found on PEP8](#bugs-found-on-PEP8)
   - [Deployment](#deployment)
   - [Credits](#credits)
       - [Media](#media)
