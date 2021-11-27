@@ -2,21 +2,19 @@
 # Table of Contents
 
   - [Introduction](#introduction)
-  - [UX](#ux) 
-  - [User Stories](#user-stories)
+  - [UX](#ux)
     - [Strategy](#strategy)
       - [Main Goal](#main-goal)
     - [User Needs](#user-needs)
       - [Scope](#scope)
-  - [Features](#features)
-  - [Structure](#structure)
-  - [Skeleton](#skeleton)
+    - [Features](#features)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
       - [Lucid Charts](#lucid-charts)
-    - [Technology Used](#technology-used)
+      - [Technology Used](#technology-used)
   - [Testing](#testing)
     - [Functionality Testing](#functionality-testing)
-    - [Performance Test](#performance-test)
-    - [Validator testing](#validator-testing)
+    - [User needs testing](#testing-user-needs)
   - [Bugs found on PEP8](#bugs-found-PEP8)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -36,24 +34,22 @@
 
   # UX
 
-  ### User Stories
-
   ### Strategy
 
-   #### Main Goal
+  #### Main Goal
    - create an attractive text adventure game using Python
    - create an provide the user  with a simple and enjoyable game to play
    - reach to people wishing to play text adventure game
   ### User Needs
   #### Scope
-  - to understand how the play the game 
+  - to understand how to play the game 
   - the game to have a compelling story
   - the choices being made to feel like they have consequences
   - players to enjoy the experience playing this game
   - when game is completed to have the option to play again
 
 ### Structure
-    After the game introduction and name input the user is asked which way he will take (Left or Right) each side is different game  that have 4 levels each .Each level has two choices except the last one that has 3 . On all levels there is only one option that give access to the player to continue the game .If the user chooses the wrong option the game will end and the user will be asked if he wants to play again.
+    After the game introduction and name input the user is asked which way he will take (Left or Right) each side is different game  that have 4 levels each .Each level has two choices except the last one that has 3 . On all levels there is only one option that gives access to the player to continue the game .If the user chooses the wrong option the game will end and the user will be asked if he wants to play again.
 ### Features
 
 [Game Intro - code photo](screenshot/game_intro_content.PNG)
@@ -71,7 +67,7 @@
   
 [Game Over - code photo](screenshot/game_over.PNG)
 
-- If during the game the user will be asked to  introduce his answer/choice to continue the game and the answer/choise is wrong the game is over .After the user will be asked if he wants to try again.
+- If during the game the user will be asked to  introduce his answer/choice to continue the game and the answer/choice is wrong the game is over .After that the user will be asked if he wants to try again.
    
 [End Game - code photo](screenshot/end_game.PNG)
 
@@ -94,27 +90,40 @@
 
 ### Testing
 
-- project has been in tested in GitPod and Heroku terminal
-- tested with input of invalid anwer choices 
-- the game has been played accessing all options to check if is working corectly 
+#### Functionality testing
+- project has been tested in GitPod and Heroku terminal
+- tested with input of invalid answer choices 
+- the game has been played accessing all options to check if is working corectly
+#### Testing user needs 
+- to understand how to play the game 
+  - at every step the game provides instructions on how to continue play
+- the game to have a compelling story
+  - the story line of the game involves the user as being a character in story
+- the choices being made to feel like they have consequences
+  - the story implies that the user has only one try for the right choice
+- players to enjoy the experience playing this game
+  - game play is built to be easy and enjoyable 
+- when game is completed to have the option to play again
+  - either player win or looses there is the option to start over. 
 
 ### Bugs found on PEP8
 
-- to many character on one line 
-- unwanted white spaces
+- line too long ; fixed by spliting long strings and expression into new lines
+- trailing  white spaces ;fixed by removing extra space
+  
 
 ### Deployment
 Steps :
 - make an account with Heroku
 - fork or clone this repository
-- ensure that the Profile is in place
+- ensure that the Procfile is in place
 - create a new app in Heroku
 - select "New" and "Create new app"
 - add name for the app and press "Create new app"
 - in "Settings" select "BuildPack" and select Python and Node.js
 - in "Settings" click "Reveal Config Vars" and input the fallowing key : PORT,VALUE:8000.
 - press on "Deploy" and select your method and repository
-- press "Connect" on selected repository
+- press "Connect" on selected Github repository
 - choose beween "Enable Automatic Deploys" or Deploy Branch" in the    manual deploy section
 - Heroku will now deploy the site
 
